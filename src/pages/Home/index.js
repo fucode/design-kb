@@ -1,7 +1,6 @@
 // src/pages/Home/index.js
 import React from 'react';
 import { Container, Typography, Grid } from '@mui/material';
-import DesignCard from '../../components/DesignCard.js';
 import ThreeDCard from '../../components/3DCard.js';
 import UXImage from '../../images/UX.png';
 import UIImage from '../../images/UI.png';
