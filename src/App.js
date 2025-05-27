@@ -16,7 +16,10 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+
 import Home from './pages/Home';
+import UxPage from './pages/UX';  // loads src/pages/ux/index.js
+import UiPage from './pages/UI';  // loads src/pages/ui/index.js
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -51,9 +54,23 @@ function App() {
     <Router>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Product Design KB
-          </Typography>
+        <Typography
+            variant="h6"
+            component={RouterLink}
+            to="/"
+            sx={{
+              flexGrow: 1,
+              color: 'inherit',
+              textDecoration: 'none',
+              '&:hover': {
+                cursor: 'pointer',
+              },
+            }}
+          >
+            FU-Design KB
+        </Typography>
+
+
 
           {isMobile ? (
             <>
@@ -90,8 +107,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ux" element={<div>UX Page</div>} />
-        <Route path="/ui" element={<div>UI Page</div>} />
+        <Route path="/ux" element={<UxPage />} />
+        <Route path="/ui" element={<UiPage />} />
       </Routes>
     </Router>
   );

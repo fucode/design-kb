@@ -7,10 +7,10 @@ function Home() {
     <Container maxWidth="lg" sx={{ mt: 4 }}>
       <Typography variant="h3" gutterBottom align="center">
 
-        Welcome to the Product Design KB
+        Faraz Uddin Design Knowledge Base
       </Typography>
-      <Typography variant="body1" align="center">
-        This knowledge base contains resources, best practices, and guidelines to help you build better products.
+      <Typography variant="body1" align="center" variant="h5">
+        This is my personal Design KB built with React
       </Typography>
 
       <Grid container spacing={4} justifyContent="center" sx={{ mt: 2 }}>
